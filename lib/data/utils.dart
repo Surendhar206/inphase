@@ -33,5 +33,5 @@ String? appLogoUrl;
 Directory? appDocDir;
 
 ///URL
-const BASE_URL = "https://www.tdta.om";
+const BASE_URL = "https://learnafrique.com";
 const String apiEndpoint = BASE_URL + "/wp-json/ms_lms/v2/";

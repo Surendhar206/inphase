@@ -1,4 +1,4 @@
-package com.learnnewskills.courses
+package com.learnafrique.course
 
 import androidx.annotation.NonNull
 import io.flutter.embedding.android.FlutterActivity

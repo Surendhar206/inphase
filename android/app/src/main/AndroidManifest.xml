@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.learnafrique.courses">
+    package="com.learnnewskills.courses">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -10,7 +10,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="Learn Afrique"
+        android:label="Learn New Skills"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true">
         <activity

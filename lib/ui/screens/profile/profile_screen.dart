@@ -1,3 +1,4 @@
+import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:developer';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -172,6 +173,14 @@ class _ProfileScreenWidgetState extends State<ProfileScreenWidget> {
                       },
                     ),
 
+                    _buildTile(
+                      "Delete account",
+                      "assets/icons/delete.svg",
+                      () async {
+                       showDeleteDialog(context,state.account.id);
+                      },
+                    ),
+
                     ///Logout
                     _buildTile(
                       localizations!.getLocalization("logout"),
@@ -187,6 +196,79 @@ class _ProfileScreenWidgetState extends State<ProfileScreenWidget> {
               ));
         },
       ),
+    );
+  }
+
+  final formKey = GlobalKey<FormState>();
+
+  TextEditingController password = TextEditingController();
+
+  showDeleteDialog(context,id) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Dialog(
+          //this right here
+          child: Container(
+            padding: EdgeInsets.all(20),
+            height: 400.h,
+            width: 450.w,
+            child: ListView(
+              children: <Widget>[
+                Text("Are you sure you want to delete this account?"),
+                Text(
+                    "Please read how account deletion works before you delete your account"),
+                SizedBox(height: 5),
+                Text(
+                  "Account",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 5),
+                Text(
+                    "Your account will be deleted from our database. All courses will be deleted from your account."),
+                SizedBox(height: 5),
+                Text(
+                  "Type DELETE to confirm account deletion",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 10),
+                Form(
+                  key: formKey,
+                  child: Column(
+                    children: [
+                      TextFormField(
+                            controller: password,
+                            decoration: InputDecoration(
+                                contentPadding: EdgeInsets.symmetric(
+                                    horizontal: 20.w, vertical: 10.h),
+                                hintText: 'Confirmation'.tr),
+                            validator: (text) {
+                              if (text!.isEmpty) {
+                                return "This field is required.";
+                              }
+                              if (text != "DELETE") {
+                                return "Please enter DELETE";
+                              }
+                              return null;
+                            },
+                          ),
+                      SizedBox(height: 10),
+                      FlatButton(child:Text("Delete"),
+                          onPressed: () async {
+                        if (formKey.currentState!.validate()) {
+                        var response = await http.get(Uri.parse('https://learnafrique.com/wp-json/masterstudyapp/v1/delete-account?id='+id));
+                        preferences!.setBool('demo', false);
+        _bloc.add(LogoutProfileEvent());
+                        }
+                      })
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 

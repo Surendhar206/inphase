@@ -314,7 +314,7 @@ class MyAppState extends State<MyApp> {
       create: (BuildContext context) => widget.profileBloc(),
       child: OverlaySupport(
         child: MaterialApp(
-          title: 'Learn Afrique',
+          title: 'Education2wealth',
           theme: _buildShrineTheme(),
           initialRoute: SplashScreen.routeName,
           debugShowCheckedModeBanner: false,

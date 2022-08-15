@@ -10,7 +10,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="Learn Afrique"
+        android:label="Learn Afriqu"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true">
         <activity

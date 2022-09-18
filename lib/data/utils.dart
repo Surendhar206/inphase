@@ -33,5 +33,5 @@ String? appLogoUrl;
 Directory? appDocDir;
 
 ///URL
-const BASE_URL = "https://education2wealth.eu";
+const BASE_URL = "https://internetphase.org";
 const String apiEndpoint = BASE_URL + "/wp-json/ms_lms/v2/";

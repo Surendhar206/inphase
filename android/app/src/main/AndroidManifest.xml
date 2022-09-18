@@ -10,7 +10,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="Education2wealth"
+        android:label="Inphase Centre"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true">
         <activity

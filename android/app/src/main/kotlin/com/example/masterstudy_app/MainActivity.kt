@@ -1,4 +1,4 @@
-package com.education2wealth.courses
+package com.inphasecentre.courses
 
 import androidx.annotation.NonNull
 import io.flutter.embedding.android.FlutterActivity

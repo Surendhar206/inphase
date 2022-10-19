@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.inphasecentre.courses">
+    package="com.paripedagogique.courses">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -9,7 +9,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="Internetphase"
+        android:label="Pari Pedagogique"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true">
         <activity

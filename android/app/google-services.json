@@ -1,73 +1,35 @@
 {
   "project_info": {
-    "project_number": "54025177082",
-    "project_id": "iphase-aa945",
-    "storage_bucket": "iphase-aa945.appspot.com"
+    "project_number": "787470094102",
+    "firebase_url": "https://masterstudy-app.firebaseio.com",
+    "project_id": "masterstudy-app",
+    "storage_bucket": "masterstudy-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:54025177082:android:2309551678d2f8a0068643",
+        "mobilesdk_app_id": "1:787470094102:android:5349b4d65a5ad432844a37",
         "android_client_info": {
-          "package_name": "com.inphasecentre.courses"
+          "package_name": "com.paripedagogique.courses"
         }
       },
       "oauth_client": [
         {
-          "client_id": "54025177082-1htvsvnv2njb4t1gj0f0q77sn265rbba.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.inphasecentre.courses",
-            "certificate_hash": "5a6e88f5d04b94a6e82d2582f75ec0fb17cdca5d"
-          }
-        },
-        {
-          "client_id": "54025177082-643g4if7gh0ot7ehin45q5e6ohamk2od.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.inphasecentre.courses",
-            "certificate_hash": "c9839262624b6bfedc3c2d5248e0289eb7cda653"
-          }
-        },
-        {
-          "client_id": "54025177082-cif1ienqrocgp6qiobpa5irc4r5p0qe9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.inphasecentre.courses",
-            "certificate_hash": "03619c1acf9b23e9438998c88ca3a9229937d5df"
-          }
-        },
-        {
-          "client_id": "54025177082-rqir2ipbj16i5b58f4buuqhdrvqes77n.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.inphasecentre.courses",
-            "certificate_hash": "0143ebe4890223fd09a3a43ba88a04f8854d759a"
-          }
-        },
-        {
-          "client_id": "54025177082-rgua9tbou117sh160q69sndgpdjrbfnc.apps.googleusercontent.com",
+          "client_id": "787470094102-8un268jd46hbsmu4q9eg2uf0ed7humhn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCmfcc_B-no5wWqoA-aVIRCe3hb87-HEdE"
+          "current_key": "AIzaSyCxF3ldM-OC2kXwH83ZlFQfpnxAF65Q2Us"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "54025177082-rgua9tbou117sh160q69sndgpdjrbfnc.apps.googleusercontent.com",
+              "client_id": "787470094102-8un268jd46hbsmu4q9eg2uf0ed7humhn.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "54025177082-9h6k336bs8a0ggq1n54llsm32ud95r7d.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.internetphase"
-              }
             }
           ]
         }

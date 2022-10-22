@@ -247,16 +247,16 @@ class SplashWidgetState extends State<SplashWidget> {
               Padding(
                 padding: EdgeInsets.only(top: 20.0, bottom: 5.0),
                 child: Text(
-                  postsCount,
+                  "",
                   textScaleFactor: 1.0,
                   style: TextStyle(color: mainColor, fontSize: 40.0),
                 ),
               ),
-              //Text "Course"
+              //Text ""
               Padding(
                 padding: EdgeInsets.only(bottom: 0),
                 child: Text(
-                  (postsCount != "") ? "COURSES" : "",
+                  "",
                   textScaleFactor: 1.0,
                   style: TextStyle(color: HexColor.fromHex("#000000"), fontSize: 14.0, fontWeight: FontWeight.w500),
                 ),
